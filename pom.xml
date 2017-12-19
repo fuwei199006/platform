@@ -12,6 +12,7 @@
         <module>core</module>
         <module>utils</module>
         <module>dal</module>
+        <module>biz</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

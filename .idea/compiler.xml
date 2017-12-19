@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="biz" />
         <module name="core" />
         <module name="dal" />
         <module name="utils" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="biz" target="1.8" />
       <module name="core" target="1.8" />
       <module name="dal" target="1.8" />
       <module name="platform" target="1.8" />
