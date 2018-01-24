@@ -1,11 +1,13 @@
-package org.pay.web.Controller;
+package org.pay.web.controller;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 @RestController
-public class HelloController {
-	
-	@RequestMapping("/")
-	public String Welcome(){
-		return "welcome";
+public class hello {
+ 
+	@RequestMapping("hello")
+	public String welcome(){
+		return "hello";
 	}
 }

@@ -13,6 +13,7 @@
         <module>utils</module>
         <module>dal</module>
         <module>biz</module>
+        <module>web</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -44,7 +45,7 @@
     </dependencies>
     </dependencyManagement>
     <build>
-        <finalName>platform</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
