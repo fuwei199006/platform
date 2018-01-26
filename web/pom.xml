@@ -6,9 +6,8 @@
     <groupId>org.pay</groupId>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
-    <name>web</name>
     <description>Demo project for Spring Boot</description>
-
+    <version>1.0.0</version>
     <parent>
         <artifactId>platform</artifactId>
         <groupId>org.pay</groupId>
@@ -39,7 +38,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>test</scope>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
