@@ -14,11 +14,11 @@ public class test {
 	@Test
 	public void testDb(){
 		
-		dbHelper db=new dbHelper("SELECT * FROM outlet_deliveryticket ");
+		dbHelper db=new dbHelper("SELECT 1 ");
 		try {
 			ResultSet set=db.pst.executeQuery();
 			set.next();
-			System.out.println(set.getString(5));
+			System.out.println(set.getString(1));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
