@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan
 @EnableAutoConfiguration
-public class WebApplication extends SpringBootServletInitializer {
+public class WebApplication extends SpringBootServletInitializer  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebApplication.class, args);
