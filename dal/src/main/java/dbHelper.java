@@ -6,10 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class dbHelper {
-	public static final String url = "";
+	public static final String url = "jdbc:mysql://127.0.0.1:3306/payplatform";
 	public static final String name = "com.mysql.jdbc.Driver";
-	public static final String user = "";
-	public static final String password = "";
+	public static final String user = "root";
+	public static final String password = "111";
 	public Connection conn = null;
 	public PreparedStatement pst = null;
 	
