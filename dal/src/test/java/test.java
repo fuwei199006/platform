@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import org.junit.Test;
+import org.mybatis.generator.api.ShellRunner;
 
 import javax.activation.DataSource;
 import java.io.IOException;
@@ -39,6 +40,8 @@ public class test {
 	
 	@Test
 	public void testMybatis() {
+	 
+		ShellRunner.main(new String[] { "-configfile", "mybatis-generator-config.xml", "-overwrite" });
 		////		DataSource dataSource = BlogDataSourceFactory.getBlogDataSource();
 		//		TransactionFactory transactionFactory = new JdbcTransactionFactory();
 		//		Environment environment = new Environment("selectMerchantInfo", transactionFactory, dataSource);
