@@ -7,7 +7,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
-
+@MapperScan("org.pay.dal")
 @SpringBootApplication(scanBasePackages = {"org.pay.web.controller"})
 public class WebApplication extends SpringBootServletInitializer {
  
