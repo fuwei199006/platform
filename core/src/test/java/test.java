@@ -37,7 +37,7 @@ public class test {
 		fb.set(dataB,f.get(dataA));
 		
 		System.out.println(dataB.getClass());
-		System.out.println(dataB.getCourse().getClass());
+		System.out.println(dataB.getId().getClass());
 		System.out.println(dataB.getCourses().get(0).getClass());
 		
 //		List<DataA> aList=new ArrayList<>();
