@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="redirectContextRelative" value="true"></property>
+        <property name="prefix" value="/WEB-INF/views/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    <!--配置扫描的包-->
+    <!--<context:component-scan base-package="org.pay.biz.*"></context:component-scan>-->
+    <!--<context:component-scan base-package="controller"></context:component-scan>-->
+    <!--<context:component-scan base-package="org.pay.dal.dao"></context:component-scan>-->
+    <!-- 引入dbconfig.properties属性文件 -->
+    <context:property-placeholder location="classpath:dbconfig.properties"/>
+
+</beans>

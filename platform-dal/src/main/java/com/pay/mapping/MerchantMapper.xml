@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.MerchantMapper">
+  <resultMap id="BaseResultMap" type="model.Merchant">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="paymentType" jdbcType="VARCHAR" property="paymenttype" />
+    <result column="paymentChannel" jdbcType="VARCHAR" property="paymentchannel" />
+    <result column="merchantNo" jdbcType="VARCHAR" property="merchantno" />
+    <result column="payInterval" jdbcType="INTEGER" property="payinterval" />
+    <result column="merchantInfo" jdbcType="VARCHAR" property="merchantinfo" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="payResultNoticeUrl" jdbcType="VARCHAR" property="payresultnoticeurl" />
+    <result column="refundResultNoticeUrl" jdbcType="VARCHAR" property="refundresultnoticeurl" />
+    <result column="signNotifyUrl" jdbcType="VARCHAR" property="signnotifyurl" />
+    <result column="unSignNofiyUrl" jdbcType="VARCHAR" property="unsignnofiyurl" />
+    <result column="appId" jdbcType="VARCHAR" property="appid" />
+    <result column="datachange_lasttime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, paymentType, paymentChannel, merchantNo, payInterval, merchantInfo, status, note, 
+    createTime, payResultNoticeUrl, refundResultNoticeUrl, signNotifyUrl, unSignNofiyUrl, 
+    appId, datachange_lasttime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_merchant
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_merchant
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="model.Merchant">
+    insert into tbl_merchant (id, paymentType, paymentChannel, 
+      merchantNo, payInterval, merchantInfo, 
+      status, note, createTime, 
+      payResultNoticeUrl, refundResultNoticeUrl, 
+      signNotifyUrl, unSignNofiyUrl, appId, 
+      datachange_lasttime)
+    values (#{id,jdbcType=INTEGER}, #{paymenttype,jdbcType=VARCHAR}, #{paymentchannel,jdbcType=VARCHAR}, 
+      #{merchantno,jdbcType=VARCHAR}, #{payinterval,jdbcType=INTEGER}, #{merchantinfo,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{note,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{payresultnoticeurl,jdbcType=VARCHAR}, #{refundresultnoticeurl,jdbcType=VARCHAR}, 
+      #{signnotifyurl,jdbcType=VARCHAR}, #{unsignnofiyurl,jdbcType=VARCHAR}, #{appid,jdbcType=VARCHAR}, 
+      #{datachangeLasttime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="model.Merchant">
+    insert into tbl_merchant
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="paymenttype != null">
+        paymentType,
+      </if>
+      <if test="paymentchannel != null">
+        paymentChannel,
+      </if>
+      <if test="merchantno != null">
+        merchantNo,
+      </if>
+      <if test="payinterval != null">
+        payInterval,
+      </if>
+      <if test="merchantinfo != null">
+        merchantInfo,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="note != null">
+        note,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="payresultnoticeurl != null">
+        payResultNoticeUrl,
+      </if>
+      <if test="refundresultnoticeurl != null">
+        refundResultNoticeUrl,
+      </if>
+      <if test="signnotifyurl != null">
+        signNotifyUrl,
+      </if>
+      <if test="unsignnofiyurl != null">
+        unSignNofiyUrl,
+      </if>
+      <if test="appid != null">
+        appId,
+      </if>
+      <if test="datachangeLasttime != null">
+        datachange_lasttime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="paymenttype != null">
+        #{paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentchannel != null">
+        #{paymentchannel,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantno != null">
+        #{merchantno,jdbcType=VARCHAR},
+      </if>
+      <if test="payinterval != null">
+        #{payinterval,jdbcType=INTEGER},
+      </if>
+      <if test="merchantinfo != null">
+        #{merchantinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="note != null">
+        #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payresultnoticeurl != null">
+        #{payresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="refundresultnoticeurl != null">
+        #{refundresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="signnotifyurl != null">
+        #{signnotifyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="unsignnofiyurl != null">
+        #{unsignnofiyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="model.Merchant">
+    update tbl_merchant
+    <set>
+      <if test="paymenttype != null">
+        paymentType = #{paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentchannel != null">
+        paymentChannel = #{paymentchannel,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantno != null">
+        merchantNo = #{merchantno,jdbcType=VARCHAR},
+      </if>
+      <if test="payinterval != null">
+        payInterval = #{payinterval,jdbcType=INTEGER},
+      </if>
+      <if test="merchantinfo != null">
+        merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="note != null">
+        note = #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payresultnoticeurl != null">
+        payResultNoticeUrl = #{payresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="refundresultnoticeurl != null">
+        refundResultNoticeUrl = #{refundresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="signnotifyurl != null">
+        signNotifyUrl = #{signnotifyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="unsignnofiyurl != null">
+        unSignNofiyUrl = #{unsignnofiyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        appId = #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="datachangeLasttime != null">
+        datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="model.Merchant">
+    update tbl_merchant
+    set paymentType = #{paymenttype,jdbcType=VARCHAR},
+      paymentChannel = #{paymentchannel,jdbcType=VARCHAR},
+      merchantNo = #{merchantno,jdbcType=VARCHAR},
+      payInterval = #{payinterval,jdbcType=INTEGER},
+      merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      note = #{note,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      payResultNoticeUrl = #{payresultnoticeurl,jdbcType=VARCHAR},
+      refundResultNoticeUrl = #{refundresultnoticeurl,jdbcType=VARCHAR},
+      signNotifyUrl = #{signnotifyurl,jdbcType=VARCHAR},
+      unSignNofiyUrl = #{unsignnofiyurl,jdbcType=VARCHAR},
+      appId = #{appid,jdbcType=VARCHAR},
+      datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="model.Merchant">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="paymentType" jdbcType="VARCHAR" property="paymenttype" />
+    <result column="paymentChannel" jdbcType="VARCHAR" property="paymentchannel" />
+    <result column="merchantNo" jdbcType="VARCHAR" property="merchantno" />
+    <result column="payInterval" jdbcType="INTEGER" property="payinterval" />
+    <result column="merchantInfo" jdbcType="VARCHAR" property="merchantinfo" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="payResultNoticeUrl" jdbcType="VARCHAR" property="payresultnoticeurl" />
+    <result column="refundResultNoticeUrl" jdbcType="VARCHAR" property="refundresultnoticeurl" />
+    <result column="signNotifyUrl" jdbcType="VARCHAR" property="signnotifyurl" />
+    <result column="unSignNofiyUrl" jdbcType="VARCHAR" property="unsignnofiyurl" />
+    <result column="appId" jdbcType="VARCHAR" property="appid" />
+    <result column="datachange_lasttime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, paymentType, paymentChannel, merchantNo, payInterval, merchantInfo, status, note, 
+    createTime, payResultNoticeUrl, refundResultNoticeUrl, signNotifyUrl, unSignNofiyUrl, 
+    appId, datachange_lasttime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_merchant
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_merchant
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="model.Merchant">
+    insert into tbl_merchant (id, paymentType, paymentChannel, 
+      merchantNo, payInterval, merchantInfo, 
+      status, note, createTime, 
+      payResultNoticeUrl, refundResultNoticeUrl, 
+      signNotifyUrl, unSignNofiyUrl, appId, 
+      datachange_lasttime)
+    values (#{id,jdbcType=INTEGER}, #{paymenttype,jdbcType=VARCHAR}, #{paymentchannel,jdbcType=VARCHAR}, 
+      #{merchantno,jdbcType=VARCHAR}, #{payinterval,jdbcType=INTEGER}, #{merchantinfo,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{note,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{payresultnoticeurl,jdbcType=VARCHAR}, #{refundresultnoticeurl,jdbcType=VARCHAR}, 
+      #{signnotifyurl,jdbcType=VARCHAR}, #{unsignnofiyurl,jdbcType=VARCHAR}, #{appid,jdbcType=VARCHAR}, 
+      #{datachangeLasttime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="model.Merchant">
+    insert into tbl_merchant
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="paymenttype != null">
+        paymentType,
+      </if>
+      <if test="paymentchannel != null">
+        paymentChannel,
+      </if>
+      <if test="merchantno != null">
+        merchantNo,
+      </if>
+      <if test="payinterval != null">
+        payInterval,
+      </if>
+      <if test="merchantinfo != null">
+        merchantInfo,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="note != null">
+        note,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="payresultnoticeurl != null">
+        payResultNoticeUrl,
+      </if>
+      <if test="refundresultnoticeurl != null">
+        refundResultNoticeUrl,
+      </if>
+      <if test="signnotifyurl != null">
+        signNotifyUrl,
+      </if>
+      <if test="unsignnofiyurl != null">
+        unSignNofiyUrl,
+      </if>
+      <if test="appid != null">
+        appId,
+      </if>
+      <if test="datachangeLasttime != null">
+        datachange_lasttime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="paymenttype != null">
+        #{paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentchannel != null">
+        #{paymentchannel,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantno != null">
+        #{merchantno,jdbcType=VARCHAR},
+      </if>
+      <if test="payinterval != null">
+        #{payinterval,jdbcType=INTEGER},
+      </if>
+      <if test="merchantinfo != null">
+        #{merchantinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="note != null">
+        #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payresultnoticeurl != null">
+        #{payresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="refundresultnoticeurl != null">
+        #{refundresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="signnotifyurl != null">
+        #{signnotifyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="unsignnofiyurl != null">
+        #{unsignnofiyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="model.Merchant">
+    update tbl_merchant
+    <set>
+      <if test="paymenttype != null">
+        paymentType = #{paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentchannel != null">
+        paymentChannel = #{paymentchannel,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantno != null">
+        merchantNo = #{merchantno,jdbcType=VARCHAR},
+      </if>
+      <if test="payinterval != null">
+        payInterval = #{payinterval,jdbcType=INTEGER},
+      </if>
+      <if test="merchantinfo != null">
+        merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="note != null">
+        note = #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payresultnoticeurl != null">
+        payResultNoticeUrl = #{payresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="refundresultnoticeurl != null">
+        refundResultNoticeUrl = #{refundresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="signnotifyurl != null">
+        signNotifyUrl = #{signnotifyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="unsignnofiyurl != null">
+        unSignNofiyUrl = #{unsignnofiyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        appId = #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="datachangeLasttime != null">
+        datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="model.Merchant">
+    update tbl_merchant
+    set paymentType = #{paymenttype,jdbcType=VARCHAR},
+      paymentChannel = #{paymentchannel,jdbcType=VARCHAR},
+      merchantNo = #{merchantno,jdbcType=VARCHAR},
+      payInterval = #{payinterval,jdbcType=INTEGER},
+      merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      note = #{note,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      payResultNoticeUrl = #{payresultnoticeurl,jdbcType=VARCHAR},
+      refundResultNoticeUrl = #{refundresultnoticeurl,jdbcType=VARCHAR},
+      signNotifyUrl = #{signnotifyurl,jdbcType=VARCHAR},
+      unSignNofiyUrl = #{unsignnofiyurl,jdbcType=VARCHAR},
+      appId = #{appid,jdbcType=VARCHAR},
+      datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="model.Merchant">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="paymentType" jdbcType="VARCHAR" property="paymenttype" />
+    <result column="paymentChannel" jdbcType="VARCHAR" property="paymentchannel" />
+    <result column="merchantNo" jdbcType="VARCHAR" property="merchantno" />
+    <result column="payInterval" jdbcType="INTEGER" property="payinterval" />
+    <result column="merchantInfo" jdbcType="VARCHAR" property="merchantinfo" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="payResultNoticeUrl" jdbcType="VARCHAR" property="payresultnoticeurl" />
+    <result column="refundResultNoticeUrl" jdbcType="VARCHAR" property="refundresultnoticeurl" />
+    <result column="signNotifyUrl" jdbcType="VARCHAR" property="signnotifyurl" />
+    <result column="unSignNofiyUrl" jdbcType="VARCHAR" property="unsignnofiyurl" />
+    <result column="appId" jdbcType="VARCHAR" property="appid" />
+    <result column="datachange_lasttime" jdbcType="TIMESTAMP" property="datachangeLasttime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, paymentType, paymentChannel, merchantNo, payInterval, merchantInfo, status, note, 
+    createTime, payResultNoticeUrl, refundResultNoticeUrl, signNotifyUrl, unSignNofiyUrl, 
+    appId, datachange_lasttime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_merchant
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_merchant
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="model.Merchant">
+    insert into tbl_merchant (id, paymentType, paymentChannel, 
+      merchantNo, payInterval, merchantInfo, 
+      status, note, createTime, 
+      payResultNoticeUrl, refundResultNoticeUrl, 
+      signNotifyUrl, unSignNofiyUrl, appId, 
+      datachange_lasttime)
+    values (#{id,jdbcType=INTEGER}, #{paymenttype,jdbcType=VARCHAR}, #{paymentchannel,jdbcType=VARCHAR}, 
+      #{merchantno,jdbcType=VARCHAR}, #{payinterval,jdbcType=INTEGER}, #{merchantinfo,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{note,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{payresultnoticeurl,jdbcType=VARCHAR}, #{refundresultnoticeurl,jdbcType=VARCHAR}, 
+      #{signnotifyurl,jdbcType=VARCHAR}, #{unsignnofiyurl,jdbcType=VARCHAR}, #{appid,jdbcType=VARCHAR}, 
+      #{datachangeLasttime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="model.Merchant">
+    insert into tbl_merchant
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="paymenttype != null">
+        paymentType,
+      </if>
+      <if test="paymentchannel != null">
+        paymentChannel,
+      </if>
+      <if test="merchantno != null">
+        merchantNo,
+      </if>
+      <if test="payinterval != null">
+        payInterval,
+      </if>
+      <if test="merchantinfo != null">
+        merchantInfo,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="note != null">
+        note,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="payresultnoticeurl != null">
+        payResultNoticeUrl,
+      </if>
+      <if test="refundresultnoticeurl != null">
+        refundResultNoticeUrl,
+      </if>
+      <if test="signnotifyurl != null">
+        signNotifyUrl,
+      </if>
+      <if test="unsignnofiyurl != null">
+        unSignNofiyUrl,
+      </if>
+      <if test="appid != null">
+        appId,
+      </if>
+      <if test="datachangeLasttime != null">
+        datachange_lasttime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="paymenttype != null">
+        #{paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentchannel != null">
+        #{paymentchannel,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantno != null">
+        #{merchantno,jdbcType=VARCHAR},
+      </if>
+      <if test="payinterval != null">
+        #{payinterval,jdbcType=INTEGER},
+      </if>
+      <if test="merchantinfo != null">
+        #{merchantinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="note != null">
+        #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payresultnoticeurl != null">
+        #{payresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="refundresultnoticeurl != null">
+        #{refundresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="signnotifyurl != null">
+        #{signnotifyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="unsignnofiyurl != null">
+        #{unsignnofiyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="datachangeLasttime != null">
+        #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="model.Merchant">
+    update tbl_merchant
+    <set>
+      <if test="paymenttype != null">
+        paymentType = #{paymenttype,jdbcType=VARCHAR},
+      </if>
+      <if test="paymentchannel != null">
+        paymentChannel = #{paymentchannel,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantno != null">
+        merchantNo = #{merchantno,jdbcType=VARCHAR},
+      </if>
+      <if test="payinterval != null">
+        payInterval = #{payinterval,jdbcType=INTEGER},
+      </if>
+      <if test="merchantinfo != null">
+        merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="note != null">
+        note = #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payresultnoticeurl != null">
+        payResultNoticeUrl = #{payresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="refundresultnoticeurl != null">
+        refundResultNoticeUrl = #{refundresultnoticeurl,jdbcType=VARCHAR},
+      </if>
+      <if test="signnotifyurl != null">
+        signNotifyUrl = #{signnotifyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="unsignnofiyurl != null">
+        unSignNofiyUrl = #{unsignnofiyurl,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        appId = #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="datachangeLasttime != null">
+        datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="model.Merchant">
+    update tbl_merchant
+    set paymentType = #{paymenttype,jdbcType=VARCHAR},
+      paymentChannel = #{paymentchannel,jdbcType=VARCHAR},
+      merchantNo = #{merchantno,jdbcType=VARCHAR},
+      payInterval = #{payinterval,jdbcType=INTEGER},
+      merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      note = #{note,jdbcType=VARCHAR},
+      createTime = #{createtime,jdbcType=TIMESTAMP},
+      payResultNoticeUrl = #{payresultnoticeurl,jdbcType=VARCHAR},
+      refundResultNoticeUrl = #{refundresultnoticeurl,jdbcType=VARCHAR},
+      signNotifyUrl = #{signnotifyurl,jdbcType=VARCHAR},
+      unSignNofiyUrl = #{unsignnofiyurl,jdbcType=VARCHAR},
+      appId = #{appid,jdbcType=VARCHAR},
+      datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

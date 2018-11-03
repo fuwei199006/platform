@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.pay.dal.dao.MerchantInfoDao">
+    <resultMap id="BaseResultMap" type="org.pay.dal.entity.MerchantInfo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="paymentType" property="paymenttype" jdbcType="VARCHAR"/>
+        <result column="merchantName" property="merchantname" jdbcType="VARCHAR"/>
+        <result column="merchantNo" property="merchantno" jdbcType="VARCHAR"/>
+        <result column="merchantInfo" property="merchantinfo" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="note" property="note" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createtime" jdbcType="TIMESTAMP"/>
+        <result column="datachange_lasttime" property="datachangeLasttime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, paymentType, merchantName, merchantNo, merchantInfo, status, note, createTime,
+        datachange_lasttime
+    </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from merchant_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from merchant_info
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="test.domain.merchantInfo">
+        insert into merchant_info (id, paymentType, merchantName,
+        merchantNo, merchantInfo, status,
+        note, createTime, datachange_lasttime
+        )
+        values (#{id,jdbcType=INTEGER}, #{paymenttype,jdbcType=VARCHAR}, #{merchantname,jdbcType=VARCHAR},
+        #{merchantno,jdbcType=VARCHAR}, #{merchantinfo,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER},
+        #{note,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{datachangeLasttime,jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="test.domain.merchantInfo">
+        insert into merchant_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="paymenttype != null">
+                paymentType,
+            </if>
+            <if test="merchantname != null">
+                merchantName,
+            </if>
+            <if test="merchantno != null">
+                merchantNo,
+            </if>
+            <if test="merchantinfo != null">
+                merchantInfo,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="createtime != null">
+                createTime,
+            </if>
+            <if test="datachangeLasttime != null">
+                datachange_lasttime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="paymenttype != null">
+                #{paymenttype,jdbcType=VARCHAR},
+            </if>
+            <if test="merchantname != null">
+                #{merchantname,jdbcType=VARCHAR},
+            </if>
+            <if test="merchantno != null">
+                #{merchantno,jdbcType=VARCHAR},
+            </if>
+            <if test="merchantinfo != null">
+                #{merchantinfo,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="createtime != null">
+                #{createtime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="datachangeLasttime != null">
+                #{datachangeLasttime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="test.domain.merchantInfo">
+        update merchant_info
+        <set>
+            <if test="paymenttype != null">
+                paymentType = #{paymenttype,jdbcType=VARCHAR},
+            </if>
+            <if test="merchantname != null">
+                merchantName = #{merchantname,jdbcType=VARCHAR},
+            </if>
+            <if test="merchantno != null">
+                merchantNo = #{merchantno,jdbcType=VARCHAR},
+            </if>
+            <if test="merchantinfo != null">
+                merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="createtime != null">
+                createTime = #{createtime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="datachangeLasttime != null">
+                datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="test.domain.merchantInfo">
+        update merchant_info
+        set paymentType = #{paymenttype,jdbcType=VARCHAR},
+        merchantName = #{merchantname,jdbcType=VARCHAR},
+        merchantNo = #{merchantno,jdbcType=VARCHAR},
+        merchantInfo = #{merchantinfo,jdbcType=VARCHAR},
+        status = #{status,jdbcType=INTEGER},
+        note = #{note,jdbcType=VARCHAR},
+        createTime = #{createtime,jdbcType=TIMESTAMP},
+        datachange_lasttime = #{datachangeLasttime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

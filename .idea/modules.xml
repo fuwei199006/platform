@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/biz/biz.iml" filepath="$PROJECT_DIR$/biz/biz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dal/dal.iml" filepath="$PROJECT_DIR$/dal/dal.iml" />
       <module fileurl="file://$PROJECT_DIR$/platform.iml" filepath="$PROJECT_DIR$/platform.iml" />
-      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-admin/platform-admin.iml" filepath="$PROJECT_DIR$/platform-admin/platform-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-biz/platform-biz.iml" filepath="$PROJECT_DIR$/platform-biz/platform-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-core/platform-core.iml" filepath="$PROJECT_DIR$/platform-core/platform-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-dal/platform-dal.iml" filepath="$PROJECT_DIR$/platform-dal/platform-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-utils/platform-utils.iml" filepath="$PROJECT_DIR$/platform-utils/platform-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-web/platform-web.iml" filepath="$PROJECT_DIR$/platform-web/platform-web.iml" />
     </modules>
   </component>
 </project>
