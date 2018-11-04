@@ -1,7 +1,8 @@
+import org.junit.jupiter.api.Test;
 import org.pay.dal.dao.entity.DataA;
 import org.pay.dal.dao.entity.DataB;
 import org.pay.dal.dao.entity.DetailA;
-import org.junit.Test;
+
 
 import java.lang.reflect.Field;
 

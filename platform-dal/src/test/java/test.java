@@ -3,8 +3,8 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.Test;
-import org.mybatis.generator.api.ShellRunner;
+
+import org.junit.jupiter.api.Test;
 import org.pay.dal.entity.MerchantInfo;
 
 import java.io.InputStream;
@@ -36,7 +36,7 @@ public class test {
 	@Test
 	public void testMybatis() {
 	 
-		ShellRunner.main(new String[] { "-configfile", "mybatis-generator-config.xml", "-overwrite" });
+//		ShellRunner.main(new String[] { "-configfile", "mybatis-generator-config.xml", "-overwrite" });
 		////		DataSource dataSource = BlogDataSourceFactory.getBlogDataSource();
 		//		TransactionFactory transactionFactory = new JdbcTransactionFactory();
 		//		Environment environment = new Environment("selectMerchantInfo", transactionFactory, dataSource);

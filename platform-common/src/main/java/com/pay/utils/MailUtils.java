@@ -2,13 +2,13 @@ package com.pay.utils;
 
 import org.springframework.util.StringUtils;
 
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Properties;
+
 
 public class MailUtils {
 	
@@ -19,7 +19,7 @@ public class MailUtils {
 		Session session = Session.getInstance(prop);
 		try {
 			//2.通过session获取Transport对象（发送邮件的核心API）
-			Transport ts = session.getTransport();
+			 Transport ts = session.getTransport();
 			//3.通过邮件用户名密码链接
 			ts.connect("smtp.163.com", "taohuihui_yh@163.com", "Abc12345");
 			//4.创建邮件

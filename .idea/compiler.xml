@@ -9,6 +9,7 @@
         <module name="platform-admin" />
         <module name="platform-biz" />
         <module name="platform-common" />
+        <module name="platform-core" />
         <module name="platform-dal" />
       </profile>
     </annotationProcessing>
