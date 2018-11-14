@@ -16,40 +16,23 @@ public class MailSender {
 	private MailType mailType;
 	private String userName;
 	private String passWord;
+	private Properties properties;
 	
-	public MailSender(MailType mailType) {
-		this.mailType = mailType;
-	}
 	
 	public MailSender(MailType mailType, String userName, String passWord) {
 		this.mailType = mailType;
 		this.userName = userName;
 		this.passWord = passWord;
+		this.properties = getProperties();
 	}
 	
-	public boolean sender(String recivers, String cc, String mailTitle, String mailContent, boolean isHtml) throws MessagingException, IOException {
-		return sender(recivers, cc, mailTitle, mailContent, isHtml, null);
-	}
-	
-	public boolean sender(String recivers, String cc, String mailTitle, String mailContent) throws MessagingException, IOException {
-		return sender(recivers, cc, mailTitle, mailContent, true, null);
-	}
-	
-	public boolean sender(String recivers, String mailTitle, String mailContent) throws MessagingException, IOException {
-		return sender(recivers, null, mailTitle, mailContent, true, null);
-	}
-	
-	public boolean sender(String recivers, String mailTitle, String mailContent, Map<String, byte[]> mapFile) throws MessagingException, IOException {
-		return sender(recivers, null, mailTitle, mailContent, true, mapFile);
-	}
 	
 	public boolean sender(String recivers, String cc, String mailTitle, String mailContent, boolean isHtml, Map<String, byte[]> mapFile) throws MessagingException, IOException {
-		Properties properties = getProperties();
 		Session session = Session.getInstance(properties);
 		//2.通过session获取Transport对象（发送邮件的核心API）
 		Transport ts = session.getTransport();
 		//3.通过邮件用户名密码链接
-		ts.connect("smtp.163.com", userName, this.passWord);
+		ts.connect(properties.getProperty("mail.host"), userName, this.passWord);
 		//4.创建邮件
 		MimeMessage mm = new MimeMessage(session);
 		//设置发件人
@@ -65,10 +48,10 @@ public class MailSender {
 		if (!isHtml) {
 			mailContent = String.format("<pre>%s</pre>", mailContent);
 		}
-//		mm.setContent(mailContent, "text/html;charset=utf-8");
+		//		mm.setContent(mailContent, "text/html;charset=utf-8");
 		// 创建多重消息
 		Multipart multipart = new MimeMultipart();
-	
+		
 		BodyPart bodyPart = new MimeBodyPart();
 		bodyPart.setContent(mailContent, "text/html;charset=utf-8");
 		multipart.addBodyPart(bodyPart);
@@ -80,7 +63,7 @@ public class MailSender {
 			mc.addMailcap("multipart/*;; x-java-content-handler=com.sun.mail.handlers.multipart_mixed");
 			mc.addMailcap("message/rfc822;; x-java-content-handler=com.sun.mail.handlers.message_rfc822");
 			CommandMap.setDefaultCommandMap(mc);
-		
+			
 			for (Map.Entry<String, byte[]> map : mapFile.entrySet()) {
 				BodyPart messageBodyPart = new MimeBodyPart();
 				InputStream inputStream = new ByteArrayInputStream(map.getValue());
@@ -117,4 +100,5 @@ public class MailSender {
 		}
 		return null;
 	}
+	
 }
