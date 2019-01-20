@@ -24,6 +24,11 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.ctrip.platform</groupId>
+            <artifactId>dal-client</artifactId>
+            <version>1.16.11</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>

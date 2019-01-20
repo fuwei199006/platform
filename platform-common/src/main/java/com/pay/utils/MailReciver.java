@@ -22,7 +22,7 @@ public class MailReciver {
 		return false;
 	}
 	
-	public Message[] getMails() throws MessagingException {
+	public Message[] getMails() throws Exception{
 		
 		Session session = Session.getInstance(properties);
 		

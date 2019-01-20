@@ -18,7 +18,8 @@
     <module>platform-common</module>
     <module>platform-admin</module>
     <module>platform-core</module>
-    <module>platform-core</module>
+      <module>platform-doc</module>
+      <!--<module>platform-core</module>-->
   </modules>
   <name>platform</name>
   <url>http://maven.apache.org</url>

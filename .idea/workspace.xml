@@ -2,14 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e348b22-409f-4bdc-a5fa-7409756f2ad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/TbkUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/AppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/CountDownLatchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/LockWait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/ThreadNeverStop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/VilateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/VolatileThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/WaitNotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CloggerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/IntegerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/SingletonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-common/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-doc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/FunctionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/FunctionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/personTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/personTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/TbkUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platform-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-dal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platform-dal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/platform-common/target/" />
     <ignored path="$PROJECT_DIR$/platform-dal/target/" />
@@ -17,11 +43,17 @@
     <ignored path="$PROJECT_DIR$/platform-admin/target/" />
     <ignored path="$PROJECT_DIR$/platform-biz/target/" />
     <ignored path="$PROJECT_DIR$/platform-core/target/" />
+    <ignored path="$PROJECT_DIR$/platform-doc/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/platform$AppTest.ic" NAME="AppTest Coverage Results" MODIFIED="1542635505544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.pay.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,129 +69,40 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="28458703">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="10" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="31" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="31" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="619" />
-          <entry key="xml" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="619" />
-          <entry key="XML" value="4" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1725656963">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="17" />
-          <entry key="gitignore" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="34" />
-          <entry key="md" value="1" />
-          <entry key="xml" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="17" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="34" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1976" />
-          <entry key="xml" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1976" />
-          <entry key="XML" value="20" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/beans/Tbk_coupon.java">
+        <entry file="file://$PROJECT_DIR$/platform-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="370">
+              <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/beans/Small_images.java">
+        <entry file="file://$PROJECT_DIR$/platform-common/src/test/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="276">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java">
+        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Singleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="46">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,10 +111,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java">
+        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="55" column="17" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="184">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CloggerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,61 +137,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/m2/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSON.class">
+        <entry file="jar://D:/m2/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar!/org/apache/logging/log4j/simple/SimpleLogger.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6532">
-              <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
+            <state relative-caret-position="368">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/beans/Results.java">
+        <entry file="jar://D:/m2/org/elasticsearch/elasticsearch/6.5.4/elasticsearch-6.5.4.jar!/org/elasticsearch/common/settings/Settings.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="161">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/m2/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/platform-admin/src/main/resources/spring-mvc.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/m2/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3473">
-              <caret line="204" column="19" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/TbkUtilsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/m2/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/platform-admin/src/main/resources/spring-mybatis.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -242,14 +169,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>1.0-SNAPSHOT</find>
+      <find>connection</find>
+      <find>doAcquireSharedInterruptibly</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -264,31 +195,45 @@
         <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/PinyinUtilsTest.java" />
         <option value="$PROJECT_DIR$/platform-common/src/test/java/blog/fileRead.java" />
         <option value="$PROJECT_DIR$/platform-common/src/test/java/TestStr.java" />
-        <option value="$PROJECT_DIR$/platform-common/pom.xml" />
         <option value="$PROJECT_DIR$/platform-dal/src/test/java/test.java" />
         <option value="$PROJECT_DIR$/platform-biz/main/java/org/pay/biz/IMerchantInfoService.java" />
         <option value="$PROJECT_DIR$/platform-admin/pom.xml" />
         <option value="$PROJECT_DIR$/platform-biz/pom.xml" />
-        <option value="$PROJECT_DIR$/platform-admin/src/main/java/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/enums/MailType.java" />
-        <option value="$PROJECT_DIR$/platform-core/pom.xml" />
         <option value="$PROJECT_DIR$/platform-core/src/test/java/test.java" />
-        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailSender.java" />
-        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailUtils.java" />
-        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java" />
-        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java" />
         <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/TbkUtilsTest.java" />
         <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/AppMain.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/WaitNotify.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/net/jcip/examples/AttributeStore.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/ThreadNeverStop.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/VilateTest.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/VolatileThread.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/CountDownLanch.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/CountDownLatchTest.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/LockWait.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Singleton.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailSender.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailUtils.java" />
+        <option value="$PROJECT_DIR$/platform-core/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/SingletonTest.java" />
         <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CAS.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/Integer.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/IntegerUtils.java" />
+        <option value="$PROJECT_DIR$/platform-dal/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-admin/src/main/java/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CloggerTest.java" />
+        <option value="$PROJECT_DIR$/platform-common/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-common/src/test/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -312,12 +257,22 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="platform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="platform-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="platform-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="platform-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -333,8 +288,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="471" />
+    <option name="y" value="149" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -345,94 +300,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
@@ -491,7 +366,35 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pay" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="director" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
@@ -505,37 +408,28 @@
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-core" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-common" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="platform-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-common" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="platform-doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
@@ -544,129 +438,28 @@
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="log4j-api-2.8.2.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="log4j-api-2.8.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="log4j" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-              <item name="activation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.alibaba:fastjson:1.2.51" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.alibaba:fastjson:1.2.51" type="70bed36:NamedLibraryElementNode" />
-              <item name="fastjson-1.2.51.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.alibaba:fastjson:1.2.51" type="70bed36:NamedLibraryElementNode" />
-              <item name="fastjson-1.2.51.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="fastjson" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-              <item name="runners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-              <item name="runners" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
-              <item name="junit-4.12.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
-              <item name="runners" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="log4j-api-2.8.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="log4j" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -677,14 +470,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542207710718" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547992774772" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jars/taobao-sdk-java-auto.jar!/" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../open/dal-dal-client-1.16.10-release/dal-dao-gen" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="project.structure.side.proportion" value="0.30668128" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -693,7 +488,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pay" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\platform\platform-common\src\test\java" />
       <recent name="D:\work\platform\platform-common\src\main\java\com\pay\utils" />
     </key>
   </component>
@@ -709,13 +508,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AppTest">
-    <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pay.AppTest" />
+  <component name="RunManager" selected="JUnit.CloggerTest.info">
+    <configuration name="CAS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pay.utils.CAS" />
       <module name="platform-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pay.*" />
+          <option name="PATTERN" value="com.pay.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -723,7 +522,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MailSenderTest.sender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ElasticUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pay.utils.ElasticUtils" />
+      <module name="platform-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pay.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegerUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pay.utils.IntegerUtils" />
+      <module name="platform-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pay.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloggerTest.info" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="platform-common" />
       <extension name="coverage">
         <pattern>
@@ -732,14 +557,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pay.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.pay.utils.MailSenderTest" />
-      <option name="METHOD_NAME" value="sender" />
+      <option name="MAIN_CLASS_NAME" value="com.pay.utils.CloggerTest" />
+      <option name="METHOD_NAME" value="info" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MailSenderTest.sender1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingletonTest.testSingleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="platform-common" />
       <extension name="coverage">
         <pattern>
@@ -748,59 +573,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.pay.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.pay.utils.MailSenderTest" />
-      <option name="METHOD_NAME" value="sender1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailSenderTest.sender2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="platform-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pay.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pay.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.pay.utils.MailSenderTest" />
-      <option name="METHOD_NAME" value="sender2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TbkUtilsTest.getItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="platform-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pay.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.pay.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.pay.utils.TbkUtilsTest" />
-      <option name="METHOD_NAME" value="getItem" />
+      <option name="MAIN_CLASS_NAME" value="com.pay.utils.SingletonTest" />
+      <option name="METHOD_NAME" value="testSingleton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MailSenderTest.sender" />
-      <item itemvalue="JUnit.MailSenderTest.sender1" />
-      <item itemvalue="JUnit.MailSenderTest.sender2" />
-      <item itemvalue="JUnit.TbkUtilsTest.getItem" />
-      <item itemvalue="Application.AppTest" />
+      <item itemvalue="Application.CAS" />
+      <item itemvalue="Application.IntegerUtils" />
+      <item itemvalue="Application.ElasticUtils" />
+      <item itemvalue="JUnit.SingletonTest.testSingleton" />
+      <item itemvalue="JUnit.CloggerTest.info" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppTest" />
-        <item itemvalue="JUnit.TbkUtilsTest.getItem" />
-        <item itemvalue="JUnit.MailSenderTest.sender2" />
-        <item itemvalue="JUnit.MailSenderTest.sender1" />
-        <item itemvalue="JUnit.MailSenderTest.sender" />
+        <item itemvalue="JUnit.CloggerTest.info" />
+        <item itemvalue="Application.ElasticUtils" />
+        <item itemvalue="Application.IntegerUtils" />
+        <item itemvalue="Application.CAS" />
+        <item itemvalue="JUnit.SingletonTest.testSingleton" />
       </list>
     </recent_temporary>
   </component>
@@ -834,50 +627,74 @@
       <workItem from="1541423857063" duration="3387000" />
       <workItem from="1541513857430" duration="598000" />
       <workItem from="1541910761760" duration="3601000" />
-      <workItem from="1542201387906" duration="3268000" />
+      <workItem from="1542201387906" duration="3435000" />
+      <workItem from="1542287982343" duration="2472000" />
+      <workItem from="1542463305286" duration="374000" />
+      <workItem from="1542463849033" duration="1117000" />
+      <workItem from="1542511583375" duration="1611000" />
+      <workItem from="1542633680078" duration="5005000" />
+      <workItem from="1542808301993" duration="4136000" />
+      <workItem from="1543147453357" duration="3329000" />
+      <workItem from="1543411198537" duration="50000" />
+      <workItem from="1543411363644" duration="1825000" />
+      <workItem from="1543496318463" duration="597000" />
+      <workItem from="1543635639742" duration="598000" />
+      <workItem from="1543655353454" duration="5144000" />
+      <workItem from="1543844065767" duration="2040000" />
+      <workItem from="1544014379887" duration="2415000" />
+      <workItem from="1544339595192" duration="7898000" />
+      <workItem from="1545449628590" duration="168000" />
+      <workItem from="1545449975062" duration="4875000" />
+      <workItem from="1545530241056" duration="6337000" />
+      <workItem from="1546655657698" duration="7019000" />
+      <workItem from="1546868944938" duration="1050000" />
+      <workItem from="1547283704738" duration="788000" />
+      <workItem from="1547982316063" duration="2000" />
+      <workItem from="1547982383661" duration="5938000" />
+      <workItem from="1547992198837" duration="560000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 16m 02s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 43m 03s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 16m 16s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 43m 54s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 16m 40s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 44m 20s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 17m 00s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 45m 23s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 17m 31s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 46m 20s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 18m 30s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 50m 55s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 18m 56s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 52m 47s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 19m 36s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 55m 46s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 19m 53s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 55m 57s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TbkUtilsTest_getItem - 2018.11.11 at 13h 21m 02s.xml">
-      <configuration name="TbkUtilsTest.getItem" configurationId="JUnit" />
+    <history-entry file="CloggerTest_info - 2019.01.20 at 21h 56m 13s.xml">
+      <configuration name="CloggerTest.info" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41564000" />
+    <option name="totallyTimeSpent" value="107079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -886,9 +703,9 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38611713" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -898,7 +715,8 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32790446" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3275488" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -908,13 +726,12 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.18017058" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.17697228" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -927,13 +744,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java</url>
-          <line>20</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java</url>
-          <line>31</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -945,45 +762,112 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java</url>
-          <line>49</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java</url>
-          <line>52</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java</url>
+          <line>42</line>
           <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java</url>
+          <line>40</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java</url>
+          <line>33</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/LockWait.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CAS.java</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CAS.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java</url>
+          <line>19</line>
+          <properties class="com.pay.AppTest" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/VilateTest.java</url>
+          <line>5</line>
+          <properties class="com.pay.VilateTest" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>Thread.currentThread().getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>rsp</expression-string>
         <language-id>JAVA</language-id>
@@ -1017,346 +901,354 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/platform-dal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-749">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-biz/main/java/org/pay/biz/impl/MerchantInfoService.java" />
-    <entry file="file://$PROJECT_DIR$/platform-dal/src/main/java/org/pay/dal/dao/MerchantInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-biz/main/java/org/pay/biz/IMerchantInfoService.java" />
-    <entry file="file://$PROJECT_DIR$/platform-web/src/main/java/com/pay/platformweb/PlatformWebApplication.java" />
-    <entry file="jar://D:/m2/org/springframework/spring-context/5.0.6.RELEASE/spring-context-5.0.6.RELEASE.jar!/org/springframework/stereotype/Controller.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-biz/src/main/java/com/pay/biz/impl/MerchantBiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-biz/src/main/java/com/pay/biz/IMerchantBiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platform-biz/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-admin/src/main/java/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-utils/src/test/java/test.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-core/src/test/java/org/pay/dal/dao/entity/DataA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-core/src/test/java/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-core/src/test/java/org/pay/dal/dao/entity/DetailB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-core/src/test/java/AsmDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/enums/MailType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/com/sun/mail/smtp/SMTPTransport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="1130" selection-start-line="1130" selection-end-line="1130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/javax/activation/FileDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="278" column="41" selection-start-line="278" selection-start-column="33" selection-end-line="278" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="1007" column="5" selection-start-line="1007" selection-start-column="5" selection-end-line="1007" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/javax/mail/internet/MimeMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12121">
-          <caret line="557" selection-start-line="557" selection-end-line="557" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/javax/activation/DataHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/javax/mail/Multipart.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1886">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/javax/mail/internet/ContentType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/javax/mail/internet/MimeBodyPart.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12696">
-          <caret line="580" column="56" selection-start-line="580" selection-start-column="56" selection-end-line="580" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        <state relative-caret-position="207">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.jms.jar!/javax/jms/Message.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="-363">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="-578">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/testMail.java">
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java" />
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/PinyinUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="-385">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/net/jcip/examples/BaseBoundedBuffer.java" />
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/net/jcip/examples/BoundedBuffer.java" />
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/net/jcip/examples/Memoizer1.java" />
+    <entry file="file://$PROJECT_DIR$/platform-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/director/TestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/blog/fileRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/TbkUtilsTest.java" />
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/personTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/TestStr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state relative-caret-position="805">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/javax/mail/util/ByteArrayDataSource.class">
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/FunctionInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="46" />
+        <state relative-caret-position="368">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m2/org/glassfish/javax.mail/10.0-b28/javax.mail-10.0-b28.jar!/javax/mail/Part.class">
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/ConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="1073">
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/IntegerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CAS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/SingletonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/PinyinUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MailSenderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="40" column="119" selection-start-line="40" selection-start-column="119" selection-end-line="40" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/beans/Tbk_coupon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/beans/Small_images.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6532">
-          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/beans/Results.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="161">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/m2/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/MachineUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3473">
-          <caret line="204" column="19" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/TbkUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/TbkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="315" column="44" selection-start-line="315" selection-start-column="44" selection-end-line="315" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="185" column="31" selection-start-line="185" selection-start-column="31" selection-end-line="185" selection-end-column="31" />
+          <folding>
+            <element signature="e#4725#4726#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="782">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-dal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/resources/css.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/resources/ctwp.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-admin/src/main/java/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-dal/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-dal/src/main/java/dbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-dal/src/main/java/MyBatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-dal/src/main/java/SessionFactoryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-dal/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-doc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m2/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar!/org/apache/logging/log4j/simple/SimpleLogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/m2/org/elasticsearch/elasticsearch/6.5.4/elasticsearch-6.5.4.jar!/org/elasticsearch/common/settings/Settings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-admin/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-admin/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/CloggerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1367,11 +1259,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>platform-biz:war exploded</last-edited>
+          <last-edited>platform-common:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.30668128" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1407,7 +1299,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.30668128" />
               </list>
             </option>
           </splitter-proportions>
@@ -1415,11 +1307,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>platform-dal</last-edited>
+          <last-edited>platform-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.30668128" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1427,6 +1320,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1438,11 +1332,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:3.8.1</last-edited>
+          <last-edited>Maven: com.ctrip.platform:dal-client:1.16.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.30668128" />
               </list>
             </option>
           </splitter-proportions>

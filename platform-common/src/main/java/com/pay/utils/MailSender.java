@@ -8,7 +8,7 @@ import javax.mail.*;
 import javax.mail.internet.*;
 import javax.mail.util.ByteArrayDataSource;
 import java.io.*;
-import java.util.HashMap;
+
 import java.util.Map;
 import java.util.Properties;
 

@@ -4,13 +4,10 @@ import com.pay.utils.enums.MailType;
 import org.junit.Test;
 
 import javax.mail.Message;
-import javax.mail.MessagingException;
-
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.Assert.*;
 
 public class MailSenderTest {
 	

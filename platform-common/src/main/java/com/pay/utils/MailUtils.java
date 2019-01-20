@@ -1,8 +1,8 @@
 package com.pay.utils;
 
 import com.pay.utils.enums.MailType;
-import org.springframework.util.StringUtils;
 
+import org.springframework.util.StringUtils;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -40,7 +40,7 @@ public class MailUtils {
 	public boolean sender(String recivers, String mailTitle, String mailContent, Map<String, byte[]> mapFile) throws MessagingException, IOException {
 		return mailSender.sender(recivers, null, mailTitle, mailContent, true, mapFile);
 	}
-	public Message[] getMails() throws MessagingException {
+	public Message[] getMails() throws Exception {
 		return mailReciver.getMails();
 	}
 	

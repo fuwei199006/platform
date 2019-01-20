@@ -11,6 +11,7 @@
         <module name="platform-common" />
         <module name="platform-core" />
         <module name="platform-dal" />
+        <module name="platform-doc" />
       </profile>
     </annotationProcessing>
   </component>

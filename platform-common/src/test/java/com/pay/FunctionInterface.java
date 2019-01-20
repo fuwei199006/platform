@@ -23,9 +23,9 @@ public class FunctionInterface {
 //		c1.accept("2");
 		//		Supplier<String> sp = () -> "hello";//只有输出消息，没有输入参数
 		//		Consumer<String> cp = r -> System.out.printf(r);//有一个输入参数，没有输出
-		//		Function<Integer, String> func = r -> String.valueOf(r);//有一个输入参数 有一个输出参数
-		//		BiFunction<Integer, Integer, String> biFunc = (a, b) -> String.valueOf(a + b);//有两个输入参数 有一个输出参数
-		//		BiConsumer<Integer, Integer> biCp = (a, b) -> System.out.printf(String.valueOf(a + b));//有两个输入参数 没有输出参数
+		//		Function<IntegerUtils, String> func = r -> String.valueOf(r);//有一个输入参数 有一个输出参数
+		//		BiFunction<IntegerUtils, IntegerUtils, String> biFunc = (a, b) -> String.valueOf(a + b);//有两个输入参数 有一个输出参数
+		//		BiConsumer<IntegerUtils, IntegerUtils> biCp = (a, b) -> System.out.printf(String.valueOf(a + b));//有两个输入参数 没有输出参数
 		 Arrays.asList(1,2,3,4,5).stream().filter(x->{
 			System.out.print(x);
 			return  x>3;
@@ -35,9 +35,9 @@ public class FunctionInterface {
 		 *title: 静态的方法demo
 		 *PS：函数式接口的实现恰好可以通过调用一个实例方法来实现，那么就可以使用实例方法引用
 		 */
-//		Consumer<String> c1 = r -> Integer.parseInt(r);
+//		Consumer<String> c1 = r -> IntegerUtils.parseInt(r);
 //		c1.accept("1");
-//		Consumer<String> c2 =Integer::parseInt;
+//		Consumer<String> c2 =IntegerUtils::parseInt;
 //		c1.accept("2");
 		
 		/**

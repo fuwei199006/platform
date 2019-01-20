@@ -125,16 +125,16 @@ public class personTest {
 		//			return x + y;
 		//		});
 		
-		//		ArrayList<Integer> accResult_ = Stream.of(1, 5, 10, 8).parallel().reduce(new ArrayList<Integer>(), new BiFunction<ArrayList<Integer>, Integer, ArrayList<Integer>>() {
+		//		ArrayList<IntegerUtils> accResult_ = Stream.of(1, 5, 10, 8).parallel().reduce(new ArrayList<IntegerUtils>(), new BiFunction<ArrayList<IntegerUtils>, IntegerUtils, ArrayList<IntegerUtils>>() {
 		//			@Override
-		//			public ArrayList<Integer> apply(ArrayList<Integer> x, Integer y) {
+		//			public ArrayList<IntegerUtils> apply(ArrayList<IntegerUtils> x, IntegerUtils y) {
 		//				x.add(y);
 		//				System.out.println("BiFunction");
 		//				return x;
 		//			}
-		//		}, new BinaryOperator<ArrayList<Integer>>() {
+		//		}, new BinaryOperator<ArrayList<IntegerUtils>>() {
 		//			@Override
-		//			public ArrayList<Integer> apply(ArrayList<Integer> x, ArrayList<Integer> y) {
+		//			public ArrayList<IntegerUtils> apply(ArrayList<IntegerUtils> x, ArrayList<IntegerUtils> y) {
 		//				x.addAll(y);
 		//				System.out.println(Thread.currentThread().getName());
 		//				System.out.println("BinaryOperator");
