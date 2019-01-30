@@ -23,25 +23,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ElasticUtils {
-	public static void main(String[] args) {
-		
-		RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(new HttpHost("localhost", 9200, "http")));
-		try {
-			IndexRequest indexRequest = new IndexRequest("finance", "cuspayment");
-			for (int i = 0; i < 100000; i++) {
-				JSONObject jsonObject = new JSONObject();
-				jsonObject.put("orderId", RandomUtils.getNumber(8));
-				jsonObject.put("shortTime", "2019-01-29");
-				jsonObject.put("amount", RandomUtils.getDoubleNumber());
-				indexRequest.source(jsonObject.toString(), XContentType.JSON);
-				client.index(indexRequest);
-			}
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
+ 
 	public static RestHighLevelClient getRestClient() {
 		RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(new HttpHost("localhost", 9200, "http")));
 		return client;
