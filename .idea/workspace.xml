@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e348b22-409f-4bdc-a5fa-7409756f2ad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/SleepUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/RandomUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" beforeDir="false" afterPath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/platform-common/target/" />
     <ignored path="$PROJECT_DIR$/platform-dal/target/" />
@@ -46,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
+            <state relative-caret-position="1495">
               <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
             </state>
           </provider>
@@ -55,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state relative-caret-position="575">
               <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,8 +64,8 @@
         <entry file="file://$PROJECT_DIR$/platform-doc/src/es/新建index和type.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="688">
-                <caret line="46" column="182" selection-start-line="46" selection-start-column="182" selection-end-line="46" selection-end-column="182" />
+              <first_editor relative-caret-position="1380">
+                <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               </first_editor>
               <second_editor />
             </state>
@@ -79,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
+            <state relative-caret-position="874">
               <caret line="38" column="57" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,18 +85,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/Math.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="724" column="53" selection-start-line="724" selection-start-column="53" selection-end-line="724" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/RandomUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="736">
               <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,15 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/Random.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="421" column="16" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -238,44 +216,11 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-dal" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="platform-dal" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="471" />
     <option name="y" value="149" />
     <option name="width" value="1346" />
@@ -560,6 +505,7 @@
       <workItem from="1548745712793" duration="3119000" />
       <workItem from="1548755211704" duration="22000" />
       <workItem from="1548756245729" duration="1402000" />
+      <workItem from="1548848332007" duration="1191000" />
     </task>
     <servers />
   </component>
@@ -596,10 +542,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123661000" />
+    <option name="totallyTimeSpent" value="124852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22921109" />
@@ -635,7 +581,7 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.17697228" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.17665036" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -974,23 +920,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/net/InetSocketAddress.java" />
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/MailReciver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1016,13 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/m2/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.5.4/elasticsearch-rest-high-level-client-6.5.4.jar!/org/elasticsearch/client/RestHighLevelClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6164">
-          <caret line="422" column="58" selection-start-line="422" selection-start-column="46" selection-end-line="422" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1072,9 +994,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/m2/org/elasticsearch/client/rest/5.5.3/rest-5.5.3.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://D:/m2/org/elasticsearch/client/rest/5.5.3/rest-5.5.3.pom" />
     <entry file="jar://D:/m2/org/elasticsearch/client/elasticsearch-rest-client/6.5.4/elasticsearch-rest-client-6.5.4.jar!/org/elasticsearch/client/RestClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15962">
@@ -1082,17 +1002,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="421" column="16" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/util/Random.java" />
     <entry file="jar://D:/m2/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.5.4/elasticsearch-rest-high-level-client-6.5.4.jar!/org/elasticsearch/client/IndicesClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="851">
           <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/Math.java" />
+    <entry file="file://$PROJECT_DIR$/platform-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1495">
+          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/RandomUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,37 +1055,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/Math.java">
+    <entry file="jar://D:/m2/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.5.4/elasticsearch-rest-high-level-client-6.5.4.jar!/org/elasticsearch/client/RestHighLevelClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="724" column="53" selection-start-line="724" selection-start-column="53" selection-end-line="724" selection-end-column="53" />
+        <state relative-caret-position="6164">
+          <caret line="422" column="58" selection-start-line="422" selection-start-column="46" selection-end-line="422" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/RandomUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/Clogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="38" column="57" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="299">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1143,8 +1075,8 @@
     <entry file="file://$PROJECT_DIR$/platform-doc/src/es/新建index和type.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="688">
-            <caret line="46" column="182" selection-start-line="46" selection-start-column="182" selection-end-line="46" selection-end-column="182" />
+          <first_editor relative-caret-position="1380">
+            <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           </first_editor>
           <second_editor />
         </state>
