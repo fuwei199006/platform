@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5e348b22-409f-4bdc-a5fa-7409756f2ad1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" beforeDir="false" afterPath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" beforeDir="false" afterPath="$PROJECT_DIR$/platform-doc/src/es/ES相关.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/platform-common/target/" />
     <ignored path="$PROJECT_DIR$/platform-dal/target/" />
@@ -51,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
+            <state relative-caret-position="138">
               <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,11 +61,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/platform-doc/src/es/新建index和type.md">
+        <entry file="file://$PROJECT_DIR$/platform-doc/src/es/ES相关.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1380">
-                <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="305">
+                <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -75,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
+            <state relative-caret-position="805">
               <caret line="38" column="57" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -198,6 +198,7 @@
         <option value="$PROJECT_DIR$/platform-common/src/test/java/com/pay/utils/RandomUtilsTest.java" />
         <option value="$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java" />
         <option value="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" />
+        <option value="$PROJECT_DIR$/platform-doc/src/es/ES相关.md" />
       </list>
     </option>
   </component>
@@ -233,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -301,14 +303,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548774758012" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548926192908" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -505,7 +505,9 @@
       <workItem from="1548745712793" duration="3119000" />
       <workItem from="1548755211704" duration="22000" />
       <workItem from="1548756245729" duration="1402000" />
-      <workItem from="1548848332007" duration="1191000" />
+      <workItem from="1548848332007" duration="2050000" />
+      <workItem from="1548897233468" duration="4536000" />
+      <workItem from="1548926427303" duration="2535000" />
     </task>
     <servers />
   </component>
@@ -542,13 +544,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124852000" />
+    <option name="totallyTimeSpent" value="132782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22921109" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23166259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -565,7 +567,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3281075" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30459127" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Spring" order="12" />
@@ -1020,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/ElasticUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
+        <state relative-caret-position="138">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1030,7 +1032,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-common/src/main/java/com/pay/utils/RandomUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
+        <state relative-caret-position="805">
           <caret line="38" column="57" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1072,11 +1074,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform-doc/src/es/新建index和type.md">
+    <entry file="file://$PROJECT_DIR$/platform-doc/src/es/ES相关.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1380">
-            <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="305">
+            <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
