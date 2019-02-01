@@ -21,16 +21,38 @@ Elastic 6.x 版只允许每个 Index 包含一个 Type，7.x 版将会彻底移�
     
     GET localhost:9200/_mapping?pretty=true  
     
-    ```  
+    ```   
+    
+3. 索引和类型的查询   
+   ``` json
+    1. 索引和类型的查询   
+       
+      
+   /_search
+   在所有索引的所有类型中搜索
+   /gb/_search
+   在索引gb的所有类型中搜索
+   /gb,us/_search
+   在索引gb和us的所有类型中搜索
+   /g*,u*/_search
+   在以g或u开头的索引的所有类型中搜索
+   /gb/user/_search
+   在索引gb的类型user中搜索
+   /gb,us/user,tweet/_search
+   在索引gb和us的类型为user和tweet中搜索
+   /_all/user,tweet/_search
+       
+   
+   ``` 
 ####  index和type  的增删    
 
 1.  创建index（db）   
- 
-   ``` bash
-    
-    put  /fwdatabase
-    
-   ```
+     
+       ``` bash
+        
+        put  /fwdatabase
+        
+       ```
 2. 创建type (tb)
 
     ```bash
@@ -54,16 +76,16 @@ Elastic 6.x 版只允许每个 Index 包含一个 Type，7.x 版将会彻底移�
     
     ```
 3. 删除index  
-```json 
-delete /fwdatabase
-```
+    ```json 
+    delete /fwdatabase
+    ```
 4. 删除Type 
 
- 想要删除type有两种选择： 
- 
- 1.重新设置index。 
- 
- 2.删除type下的所有数据。
+     想要删除type有两种选择： 
+     
+     4.1 重新设置index。 
+     
+     4.2 删除type下的所有数据。
  
 **报错：**
 ```cte
@@ -160,79 +182,112 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
      { "index": { "_id":8 }}
      {"orderId":"1112311", "name":"user", "amount":112.09, "desc":"测试1231"}
     ```
-4. 删除数据   
+5. 删除数据   
    ```json
    
    DELETE  /fwdatabase/order/lCYuo2gBn1FEHZKM5Wsw
 
    ```
 
-5. 批量删除数据    
+6. 批量删除数据    
 
-6. 使用Search Lite API 
+7. 使用Search Lite API 
 
-  6.1 简单查询    
+   7.1 简单查询    
+      
+      ```json
+      
+       GET /fwdatabase/order/_search?q=desc:测试
+    
+      ```  
+      
+      ```json
+      GET /fwdatabase/order/123?_source=orderId,amount
+      //只需要orderID和amount字段
+   ```
+8. （DSL）查询 
+
+DSL 需要一个query参数，一般形式是：  
+
+    ```json
+    {
+        "query": YOUR_QUERY_HERE
+    }
+    ```
+例如：查询所有文档   
+
+    ```json
+    GET /_search
+    {
+        "query": {
+            "match_all": {}
+        }
+    } 
+    ```   
+  查询子集格式如下：  
   
   ```json
-  
-   GET /fwdatabase/order/_search?q=desc:测试
-
-  ```  
-  
-  ```json
-  GET /fwdatabase/order/123?_source=orderId,amount
-  //只需要orderID和amount字段
+  {
+      QUERY_NAME: {
+          ARGUMENT: VALUE,
+          ARGUMENT: VALUE,...
+      }
+  }
   ```
-7. （DSL）查询 
-  - 基本查询    
+
+
+  - 基本查询       
+   
     1. 查询所有   
     
-    ```json
+        ```json
+        
+        GET /fwdatabase/order/_search
     
-    GET /fwdatabase/order/_search
-
-    ```   
+        ```   
     
     2. 按条件匹配查询    
     
-    ``` json
-    POST /fwdatabase/order/_search
-    {
-        "query": {
-            "match": {//包含
-                "desc": "测试"
+        ``` json
+        POST /fwdatabase/order/_search
+        {
+            "query": {
+                "match": {//包含
+                    "desc": "测试"
+                }
             }
         }
-    }
-    ```   
-    精确匹配： 
-    ```json
-     POST /fwdatabase/order/_search
-    {
-        "query": {
-            "term": {//term精确
-                "amount": 12.09
+        ```   
+    3.精确匹配： 
+      
+      ```json 
+      
+        POST /fwdatabase/order/_search
+        {
+            "query": {
+                "term": {//term精确
+                    "amount": 12.09
+                }
             }
-        }
-    }
-
-    ```  
-    使用非评分模式(返回结果中没有评分的信息)：  
+        } 
+        
+      ```  
+    4. 使用非评分模式(返回结果中没有评分的信息)：  
     
-    ```json
-     POST /fwdatabase/order/_search
-    {
-        "query" : {
-            "constant_score" : { 
-                "filter" : {
-                    "term" : { 
-                        "amount" : 12.09
+      ```json
+         POST /fwdatabase/order/_search
+        {
+            "query" : {
+                "constant_score" : { 
+                    "filter" : {
+                        "term" : { 
+                            "amount" : 12.09
+                        }
                     }
                 }
             }
         }
-    }
-    ```
+       ```
     
     3. 分页查询  
     
