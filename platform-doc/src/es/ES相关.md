@@ -21,7 +21,29 @@ Elastic 6.x 版只允许每个 Index 包含一个 Type，7.x 版将会彻底移�
     
     GET localhost:9200/_mapping?pretty=true  
     
-    ```  
+    ```   
+    
+3. 索引和类型的查询   
+   ``` json
+    1. 索引和类型的查询   
+       
+      
+   /_search
+   在所有索引的所有类型中搜索
+   /gb/_search
+   在索引gb的所有类型中搜索
+   /gb,us/_search
+   在索引gb和us的所有类型中搜索
+   /g*,u*/_search
+   在以g或u开头的索引的所有类型中搜索
+   /gb/user/_search
+   在索引gb的类型user中搜索
+   /gb,us/user,tweet/_search
+   在索引gb和us的类型为user和tweet中搜索
+   /_all/user,tweet/_search
+       
+   
+   ``` 
 ####  index和type  的增删    
 
 1.  创建index（db）   
@@ -143,7 +165,38 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
 
 6. 使用Search Lite API
 7. （DSL）查询 
-  - 基本查询    
+
+DSL 需要一个query参数，一般形式是：  
+
+    ```json
+    {
+        "query": YOUR_QUERY_HERE
+    }
+    ```
+例如：查询所有文档   
+
+    ```json
+    GET /_search
+    {
+        "query": {
+            "match_all": {}
+        }
+    } 
+    ```   
+  查询子集：  
+  
+  ```json
+  {
+      QUERY_NAME: {
+          ARGUMENT: VALUE,
+          ARGUMENT: VALUE,...
+      }
+  }
+  ```
+
+
+  - 基本查询       
+   
     1. 查询所有   
     ```json
      GET /fwdatabase/order/_search

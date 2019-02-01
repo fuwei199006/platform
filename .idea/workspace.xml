@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/platform-doc/src/es/ES相关.md" line="194" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5e348b22-409f-4bdc-a5fa-7409756f2ad1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform-doc/src/es/新建index和type.md" beforeDir="false" afterPath="$PROJECT_DIR$/platform-doc/src/es/ES相关.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-doc/src/es/ES相关.md" beforeDir="false" afterPath="$PROJECT_DIR$/platform-doc/src/es/ES相关.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/platform-common/target/" />
     <ignored path="$PROJECT_DIR$/platform-dal/target/" />
@@ -63,9 +66,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platform-doc/src/es/ES相关.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="305">
-                <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="525">
+                <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -507,7 +510,7 @@
       <workItem from="1548756245729" duration="1402000" />
       <workItem from="1548848332007" duration="2050000" />
       <workItem from="1548897233468" duration="4536000" />
-      <workItem from="1548926427303" duration="2535000" />
+      <workItem from="1548926427303" duration="4535000" />
     </task>
     <servers />
   </component>
@@ -544,7 +547,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132782000" />
+    <option name="totallyTimeSpent" value="134782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1076,9 +1079,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform-doc/src/es/ES相关.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="305">
-            <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="525">
+            <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
