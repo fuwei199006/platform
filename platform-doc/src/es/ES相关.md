@@ -189,16 +189,17 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
      { "index": { "_id":8 }}
      {"orderId":"1112311", "name":"user", "amount":112.09, "desc":"测试1231"}
     ```    
-5.局部更新数据    
+5. 局部更新数据    
 
-       ```json
-       POST /fwdatabase/order/5/_update
-       {
+    ```json
+    POST /fwdatabase/order/5/_update
+    {
             "doc" : {
-               "tags" : "testing" 
+            "tags" : "testing" 
             }
-      }
-       ```  
+    }
+    
+    ```  
    id=5的数据增加一个tags列。  
    
    查询出来结果：   
@@ -244,6 +245,8 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
 7. 批量删除数据    
 
 ### 查询  
+
+
 8. 使用Search Lite API 
 
    7.1 简单查询    
@@ -258,6 +261,8 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
       GET /fwdatabase/order/123?_source=orderId,amount
       //只需要orderID和amount字段
    ```
+
+
 9. （DSL）查询 
 
 DSL 需要一个query参数，一般形式是：  
@@ -443,6 +448,7 @@ DSL 需要一个query参数，一般形式是：
         }
     }
     ```
+常用测查询收录：  
  
 6.2 高级查询 
 
