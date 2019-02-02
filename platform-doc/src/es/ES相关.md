@@ -128,39 +128,46 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
     { "index": { "_id":8 }}
     {"orderId":"1112311", "name":"user", "amount":112.09, "desc":"测试1231"}
     ```
-    
-    ```json
-    { "index": {}}
-    {"orderId":"1111", "name":"user", "amount":12.09, "desc":"测试"}
-    { "index": {}}
-    {"orderId":"1112311", "name":"user", "amount":112.09, "desc":"测试1231"}
+    测试数据
+    ```json   
     {"index":{}}
-                                                                                 {"orderId":"10000","name":"user","amount":12.09,"desc":"测试"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10001","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10002","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10003","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10004","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10005","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10006","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10007","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10008","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10009","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10010","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10011","name":"user","amount":112.09,"desc":"测试1"}
-                                                                                  {"index":{}}
-                                                                                  {"orderId":"10012","name":"user","amount":112.09,"desc":"测试1"}
-
+    {"orderId":"10000","name":"user","amount":12.09,"desc":"测试"}
+    
+    {"index":{}}
+    {"orderId":"10001","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10002","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10003","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10004","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10005","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10006","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10007","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10008","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10009","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10010","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10011","name":"user","amount":112.09,"desc":"测试1"}
+    
+    {"index":{}}
+    {"orderId":"10012","name":"user","amount":112.09,"desc":"测试1"}
     ```    
 3. 更新数据      
 
@@ -181,17 +188,63 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
      {"orderId":"1111", "name":"user", "amount":12.09, "desc":"测试"}
      { "index": { "_id":8 }}
      {"orderId":"1112311", "name":"user", "amount":112.09, "desc":"测试1231"}
-    ```
-5. 删除数据   
+    ```    
+5.局部更新数据    
+
+       ```json
+       POST /fwdatabase/order/5/_update
+       {
+            "doc" : {
+               "tags" : "testing" 
+            }
+      }
+       ```  
+   id=5的数据增加一个tags列。  
+   
+   查询出来结果：   
+       
+   ```json   
+    
+    {
+                   "_index": "fwdatabase",
+                   "_type": "order",
+                   "_id": "5",
+                   "_score": 1,
+                   "_source": {
+                       "orderId": "1111",
+                       "name": "user",
+                       "amount": 12.09,
+                       "desc": "123测试1231",
+                       "tags": "testing"
+                   }
+               },
+               {
+                   "_index": "fwdatabase",
+                   "_type": "order",
+                   "_id": "kyYoo2gBn1FEHZKMD2uf",
+                   "_score": 1,
+                   "_source": {
+                       "orderId": "1112311",
+                       "name": "user",
+                       "amount": 112.09,
+                       "desc": "测试1231"
+                   }
+               }
+    }
+   ```
+ 
+    
+6. 删除数据   
    ```json
    
    DELETE  /fwdatabase/order/lCYuo2gBn1FEHZKM5Wsw
 
    ```
 
-6. 批量删除数据    
+7. 批量删除数据    
 
-7. 使用Search Lite API 
+### 查询  
+8. 使用Search Lite API 
 
    7.1 简单查询    
       
@@ -205,7 +258,7 @@ flood stage disk watermark [95%] exceeded on [m-1Ddl_kSZ-X5jDg0R6EKA][m-1Ddl_][D
       GET /fwdatabase/order/123?_source=orderId,amount
       //只需要orderID和amount字段
    ```
-8. （DSL）查询 
+9. （DSL）查询 
 
 DSL 需要一个query参数，一般形式是：  
 
@@ -234,10 +287,50 @@ DSL 需要一个query参数，一般形式是：
       }
   }
   ```
-
+  检索多个文档
+ 合并多个请求可以避免每个请求单独的网络开销。如果你需要从Elasticsearch中检索多个文档，相对于一个一个的检索，更快的方式是在一个请求中使用multi-get或者mget API。  
+ 
+    ```json
+    {
+       "docs" : [
+          {
+             "_index" : "fwdatabase",
+             "_type" :  "order",
+             "_id" :    "nCYUrGgBn1FEHZKMQWsk"
+          },
+          {
+             "_index" : "fwdatabase1",
+             "_type" :  "order",
+             "_id" :   "myYUrGgBn1FEHZKMQWsk",
+             "_source": "views"
+          }
+       ]
+    }
+    ```
 
   - 基本查询       
-   
+    格式  
+    
+    ```json
+    {
+        "query": {
+            "bool": {
+                "must": [],
+                "must_not": [],
+                "should": [
+                    {
+                        "match_all": {}
+                    }
+                ]
+            }
+        },
+        "from": 0,
+        "size": 50,
+        "sort": [],
+        "aggs": {},
+        "version": true
+    }
+    ```
     1. 查询所有   
     
         ```json
@@ -287,6 +380,21 @@ DSL 需要一个query参数，一般形式是：
                 }
             }
         }
+       ```
+       查询多个
+       ```json
+            POST /fwdatabase/order/_search
+           {
+               "query" : {
+                   "constant_score" : { 
+                       "filter" : {
+                           "term" : { 
+                               "amount" : [12.09,129]
+                           }
+                       }
+                   }
+               }
+           }
        ```
     
     3. 分页查询  
@@ -351,3 +459,19 @@ DSL 需要一个query参数，一般形式是：
 
 1. 实现CRUD 
 2. 实现高级分析
+
+### 其他
+Explain Api
+文档是如何被匹配到的
+当explain选项加到某一文档上时，它会告诉你为何这个文档会被匹配，以及一个文档为何没有被匹配。
+请求路径为 /index/type/id/_explain, 如下所示：
+GET /us/tweet/12/_explain
+{
+   "query" : {
+      "filtered" : {
+         "filter" : { "term" :  { "user_id" : 2           }},
+         "query" :  { "match" : { "tweet" :   "honeymoon" }}
+      }
+   }
+}
+除了上面我们看到的完整描述外，我们还可以看到这样的描述：
