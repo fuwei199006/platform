@@ -1,11 +1,14 @@
 package com.pay.utils;
 
 public class SleepUtils {
-	public static void Sleep(long seconds){
+	public static void SleepSecond(long seconds) {
+		Sleep(seconds*1000);
+	}
+	
+	public static void Sleep(long second) {
 		try {
-			Thread.sleep(seconds*1000);
-		}
-		catch (InterruptedException ex){
+			Thread.sleep(second);
+		} catch (InterruptedException ex) {
 		
 		}
 	}
