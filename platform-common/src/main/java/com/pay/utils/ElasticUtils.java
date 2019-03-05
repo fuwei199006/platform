@@ -21,17 +21,21 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 public class ElasticUtils {
- 
-	public static RestHighLevelClient getRestClient() {
-		RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(new HttpHost("localhost", 9200, "http")));
-		return client;
+
+	private static RestHighLevelClient restClient = null;
+
+	static {
+		if (restClient == null) {
+			restClient = new RestHighLevelClient(RestClient.builder(new HttpHost("10.32.121.3", 9200, "http")));
+		}
 	}
-	
+
 	public static void add(String indexName, String type, JSONObject docment) {
 		try {
-			RestHighLevelClient restClient = getRestClient();
+
 			IndexRequest indexRequest = new IndexRequest(indexName, type);
 			indexRequest.source(docment.toString(), XContentType.JSON);
 			restClient.index(indexRequest);
@@ -39,23 +43,42 @@ public class ElasticUtils {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void addList(String indexName, String type, List<JSONObject> docments) {
 		try {
-			RestHighLevelClient restClient = getRestClient();
+
 			BulkRequest request = new BulkRequest();
+			IndexRequest indexRequest = new IndexRequest(indexName, type);
 			for (JSONObject docment : docments) {
-				request.add(new IndexRequest(indexName, type).source(XContentType.JSON, docment.toJSONString()));
+				request.add(indexRequest.source(docment.toJSONString(), XContentType.JSON));
 			}
 			restClient.bulk(request);
 		} catch (IOException e) {
 			e.printStackTrace();
+
 		}
 	}
-	
+
+	public static void addListByPage(String indexName, String type, List<JSONObject> docments) {
+		try {
+			int pagesize = 10000;
+			if (docments.size() <= pagesize) {
+				addList(indexName, type, docments);
+				return;
+			}
+			int pageIndex = docments.size() / pagesize;
+			for (int i = 0; i < pageIndex; i++) {
+				List<JSONObject> tempList = docments.stream().skip(i * pagesize).limit(pagesize).collect(Collectors.toList());
+				addList(indexName, type, tempList);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static void delete(String indexName, String type, List<JSONObject> docments) {
 		try {
-			RestHighLevelClient restClient = getRestClient();
+
 			IndexRequest indexRequest = new IndexRequest(indexName, type);
 			for (JSONObject docment : docments) {
 				indexRequest.source(docment.toString(), XContentType.JSON);
@@ -65,38 +88,38 @@ public class ElasticUtils {
 			e.printStackTrace();
 		}
 	}
-	
-	public static SearchResponse searchByPage(String indexName, String type, JSONObject docment, int index, int size, int timeOut) {
-		RestHighLevelClient client = getRestClient();
-		
+
+	public static SearchResponse searchByPage(String indexName, String type, int index, int size) {
+
+
 		try {
 			SearchRequest searchRequest = new SearchRequest(indexName);
 			searchRequest.types(type);
-//			searchRequest.
-			
+			//			searchRequest.
+
 			// 2、用SearchSourceBuilder来构造查询请求体 ,请仔细查看它的方法，构造各种查询的方法都在这。
 			SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
-			sourceBuilder.query(QueryBuilders.termQuery("age", 24));
+			sourceBuilder.query(QueryBuilders.matchAllQuery());
 			sourceBuilder.from((index - 1) * size);
 			sourceBuilder.size(size);
 			sourceBuilder.timeout(new TimeValue(60, TimeUnit.SECONDS));
-			SearchResponse searchResponse = client.search(searchRequest);
+			SearchResponse searchResponse = restClient.search(searchRequest);
 			return searchResponse;
 		} catch (Exception ex) {
 			return null;
 		}
-		
-		
+
+
 	}
-	
+
 	public static DeleteResponse delete(String indexName, String type, JSONObject docment) {
-		RestHighLevelClient client = getRestClient();
-		
+
+
 		try {
 			DeleteRequest deleteRequest = new DeleteRequest(indexName);
 			deleteRequest.type(type);
 
-			DeleteResponse deleteResponse = client.delete(deleteRequest);
+			DeleteResponse deleteResponse = restClient.delete(deleteRequest);
 			return deleteResponse;
 		} catch (Exception ex) {
 			return null;

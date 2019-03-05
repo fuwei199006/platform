@@ -9,8 +9,8 @@ public class RandomUtils {
 	
 	public static String getNumber(int n) {
 		StringBuilder sb = new StringBuilder();
-		Random random = new Random(System.currentTimeMillis());
 		for (int i = 0; i < n; i++) {
+			Random random = new Random();
 			int i1 = random.nextInt(10);
 			sb.append(i1);
 		}
@@ -19,8 +19,8 @@ public class RandomUtils {
 	
 	public static long getNumberLong(int n) {
 		StringBuilder sb = new StringBuilder();
-		Random random = new Random(System.currentTimeMillis());
 		for (int i = 0; i < n; i++) {
+			Random random = new Random();
 			int i1 = random.nextInt(10);
 			sb.append(i1);
 		}
